@@ -46,16 +46,6 @@ void classifyPackage (char mySize, int myArea, packageInfo packages[], packageIn
     //   areaString の文字列は strcpy を使う
     //   myPackagesCount は myPackages のインデックスとして使う
     */
-
-    for (i=0; i<20; i++) {
-        if (packages[i].size == mySize && packages[i].area == myArea) {
-            myPackages[myPackagesCount].number = packages[i].number;
-            myPackages[myPackagesCount].size = packages[i].size;
-            myPackages[myPackagesCount].area = packages[i].area;
-            strcpy(myPackages[myPackagesCount].areaString, packages[i].areaString);
-            myPackagesCount++;
-        }
-    }
 }
 
 /*------------------------------------------------
